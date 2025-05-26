@@ -1,0 +1,89 @@
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f6fa;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.formBox {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem 3rem;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.formBox h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1.8rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: #f0f2f5;
+  color: #222;
+  transition: border 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.submit,
+.altButton {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.submit {
+  background-color: #4caf50;
+  color: white;
+}
+
+.altButton {
+  background-color: #2196f3;
+  color: white;
+}
+
+.link {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .formBox {
+    padding: 1.5rem;
+  }
+
+  .input,
+  .submit,
+  .altButton {
+    font-size: 0.95rem;
+  }
+
+  .formBox h2 {
+    font-size: 1.6rem;
+  }
+}
